@@ -1,0 +1,249 @@
+{
+  "label": "thermotolerans_2",
+  "file": "iBM3063.xml",
+  "basic_stats": {
+    "n_reactions": 3063,
+    "n_metabolites": 2741,
+    "n_genes": 1165,
+    "n_exchanges": 144,
+    "objective": "1.0*BIOMASS - 1.0*BIOMASS_reverse_69053",
+    "default_medium_growth": 80.98792405014684
+  },
+  "exchange_map": {
+    "glucose": "EX_glc__D_e",
+    "fructose": "EX_fru_e",
+    "oxygen": "EX_o2_e",
+    "ammonium": "EX_nh4_e",
+    "ethanol": "EX_etoh_e",
+    "glycerol": "EX_glyc_e",
+    "acetate": "EX_ac_e",
+    "co2": "EX_co2_e",
+    "sulfate": "EX_so4_e",
+    "proline": "EX_pro__L_e",
+    "arginine": "EX_arg__L_e",
+    "biotin": "EX_btn_e",
+    "thiamine": "EX_thm_e",
+    "pantothenate": "EX_pnto__R_e",
+    "ergosterol": "EX_ergst_e",
+    "zymosterol": "EX_zymst_e",
+    "oleate": null,
+    "palmitoleate": "EX_hdcea_e"
+  },
+  "exchange_map_gaps": [
+    "oleate"
+  ],
+  "structural": {
+    "n_mass_charge_unbalanced": 67,
+    "sample_unbalanced": {
+      "0013": {
+        "charge": 4.0
+      },
+      "ACOATAm": {
+        "H": 1.0,
+        "S": 1.0,
+        "R": 1.0
+      },
+      "0137": {
+        "C": -33.0,
+        "H": -58.0,
+        "N": -1.0,
+        "O": -18.0,
+        "P": -1.0,
+        "R": -2.0
+      },
+      "0229": {
+        "charge": 2.0
+      },
+      "0241": {
+        "charge": -6.0
+      }
+    },
+    "n_dead_ends": 983,
+    "n_duplicate_groups": 0,
+    "n_blocked_default_medium": 1629
+  },
+  "medium": {
+    "feasibility": {
+      "status": "optimal",
+      "growth": 67.22469522480205
+    },
+    "note": "growth value here reflects concentration-derived uptake CAPS, not calibrated uptake kinetics -- a feasibility check, not a growth-rate prediction",
+    "shadow_prices_top5": {
+      "3214_erm": 0.3421620565314882,
+      "hexccoa_erm": 0.3421620565314881,
+      "hexccoa_c": 0.3421620565314881,
+      "hxc2coa_erm": 0.3421620565314881,
+      "3ohxccoa_erm": 0.3421620565314881
+    },
+    "proline_anaerobic_leak": {
+      "without": 0.0,
+      "with_open": 0.0,
+      "flag": false
+    }
+  },
+  "oxygen_sweep": {
+    "patch_reactions_found": {
+      "ergosterol": "EX_ergst_e",
+      "zymosterol": "EX_zymst_e",
+      "oleate": null,
+      "palmitoleate": "EX_hdcea_e"
+    },
+    "medium_ions_forced_open": {},
+    "unpatched": [
+      {
+        "o2": 0.0,
+        "growth": 0.0
+      },
+      {
+        "o2": 0.25,
+        "growth": 2.0145029916073343,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.07816038896545688
+      },
+      {
+        "o2": 0.5,
+        "growth": 4.029005983214671,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.15632077793091384
+      },
+      {
+        "o2": 1.0,
+        "growth": 8.058011966429342,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.3126415558618277
+      },
+      {
+        "o2": 2.0,
+        "growth": 16.116023932858678,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.6252831117236552
+      },
+      {
+        "o2": 3.0,
+        "growth": 24.17403589928801,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.9379246675854824
+      },
+      {
+        "o2": 4.0,
+        "growth": 32.232047865717355,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -1.2505662234473105
+      },
+      {
+        "o2": 6.0,
+        "growth": 48.348071798576036,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": -515.6358887624247,
+        "acetate_flux": -1.8758493351709655
+      },
+      {
+        "o2": 8.0,
+        "growth": 64.46409573143468,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": -986.4732301435726,
+        "acetate_flux": 492.3455511171371
+      },
+      {
+        "o2": 10.0,
+        "growth": 64.94832000981349,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": -986.3716079370442,
+        "acetate_flux": 500.15198901229206
+      }
+    ],
+    "patched": [
+      {
+        "o2": 0.0,
+        "growth": 0.0
+      },
+      {
+        "o2": 0.25,
+        "growth": 2.014502991607334,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.07816038896545693
+      },
+      {
+        "o2": 0.5,
+        "growth": 4.029005983214671,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.15632077793091384
+      },
+      {
+        "o2": 1.0,
+        "growth": 8.058011966429342,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.3126415558618277
+      },
+      {
+        "o2": 2.0,
+        "growth": 16.116023932858678,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.6252831117236552
+      },
+      {
+        "o2": 3.0,
+        "growth": 24.17403589928801,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -0.9379246675854824
+      },
+      {
+        "o2": 4.0,
+        "growth": 32.232047865717355,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": 0.0,
+        "acetate_flux": -1.2505662234473105
+      },
+      {
+        "o2": 6.0,
+        "growth": 48.348071798576036,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": -515.6358887624247,
+        "acetate_flux": -1.8758493351709655
+      },
+      {
+        "o2": 8.0,
+        "growth": 64.46409573143468,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": -986.4732301435726,
+        "acetate_flux": 492.3455511171371
+      },
+      {
+        "o2": 10.0,
+        "growth": 64.94832000981349,
+        "glucose_uptake": 0.0,
+        "ethanol_flux": 0.0,
+        "glycerol_flux": -986.3716079370442,
+        "acetate_flux": 500.15198901229206
+      }
+    ]
+  }
+}
